@@ -1,6 +1,6 @@
-# Core UI (coreacc-ui)
+# Beta Apskaita UI (beta-client-ui)
 
-Core Acc app
+Beta Apskaita
 
 ## Install the dependencies
 
