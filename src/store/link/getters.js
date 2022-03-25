@@ -1,6 +1,15 @@
 import state from "./state";
 
-export function links(state) {
-  console.log("gettter", state);
-  return state.linksList;
+function links(state) {
+  const { linksList } = state;
+
+  return linksList;
 }
+
+let isServerSet = (state) => {
+  const { activeServer } = state;
+
+  return activeServer !== null && activeServer !== "";
+};
+
+export { links, isServerSet };

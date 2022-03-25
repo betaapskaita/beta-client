@@ -9,4 +9,9 @@ export default {
   server: {
     listTitle: "Serverių sąrašas",
   },
+
+  footer: {
+    name: "Beta Apskaita",
+    copyright: "Visos teisės saugomos",
+  },
 };

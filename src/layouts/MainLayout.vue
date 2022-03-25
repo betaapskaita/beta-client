@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import EssentialLink from "components/EssentialLink.vue";
+import EssentialLink from "src/components/ServerLink.vue";
 
 import { defineComponent, ref } from "vue";
 import { mapGetters } from "vuex";
