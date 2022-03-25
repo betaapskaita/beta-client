@@ -1,8 +1,8 @@
 {
   "name": "coreacc-ui",
   "version": "0.0.1",
-  "description": "Core Acc app",
-  "productName": "Core UI",
+  "description": "Beta Apskaita klientas",
+  "productName": "Beta Apskaita",
   "author": "Dainius Matusevicius <dainiauskas@gmail.com>",
   "private": true,
   "scripts": {

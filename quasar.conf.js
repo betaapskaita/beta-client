@@ -140,9 +140,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `Core UI`,
-        short_name: `Core UI`,
-        description: `Core Acc app`,
+        name: `Beta Apskaita`,
+        short_name: `Beta Apskaita`,
+        description: `Beta Apskaita klientinė dalis`,
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",
