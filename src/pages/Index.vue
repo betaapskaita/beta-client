@@ -1,8 +1,8 @@
 <template>
   <q-page class="flex flex-center">
     <img
-      alt="Core Acc"
-      src="~assets/quasar-logo-vertical.svg"
+      alt="Beta apskaita"
+      src="~assets/beta-logo.svg"
       style="width: 200px; height: 200px"
     />
   </q-page>
