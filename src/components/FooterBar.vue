@@ -2,14 +2,14 @@
   <q-footer>
     <q-toolbar>
       <div>
-        {{ $t("footer.name") }} @ {{ year }}. {{ $t("footer.copyright") }}
+        {{ $t('footer.name') }} @ {{ year }}. {{ $t('footer.copyright') }}
       </div>
     </q-toolbar>
   </q-footer>
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   setup() {
@@ -18,7 +18,7 @@ export default defineComponent({
 
     let year = startYear.toString();
     if (startYear != nowYear) {
-      year += " - " + nowYear.toString();
+      year += ' - ' + nowYear.toString();
     }
 
     return {

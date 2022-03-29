@@ -14,7 +14,7 @@
           <img src="~assets/beta-logo.svg" />
         </q-avatar>
 
-        <q-item-label header> {{ $t("server.listTitle") }} </q-item-label>
+        <q-item-label header> {{ $t('server.listTitle') }} </q-item-label>
 
         <q-space />
 
@@ -30,7 +30,7 @@
       </q-toolbar>
 
       <q-list padding>
-        <ServerLink v-for="link in links" :key="link.title" v-bind="link" />
+        <ServerList />
       </q-list>
     </q-drawer>
 
@@ -44,31 +44,18 @@
   </q-layout>
 </template>
 
-<script>
-import FooterBar from "components/FooterBar.vue";
-import ServerLink from "components/ServerLink.vue";
-import { mapGetters } from "vuex";
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-export default {
-  name: "ServerLayout",
+import FooterBar from 'components/FooterBar.vue';
+import ServerList from 'components/ServerList.vue';
+
+export default defineComponent({
+  name: 'ServerLayout',
 
   components: {
     FooterBar,
-    ServerLink,
+    ServerList,
   },
-
-  computed: {
-    ...mapGetters("link", ["links"]),
-  },
-
-  methods: {
-    addLink: (event) => {
-      console.log("ok", event);
-    },
-  },
-
-  created() {
-    this.$store.dispatch("link/getLinks");
-  },
-};
+});
 </script>

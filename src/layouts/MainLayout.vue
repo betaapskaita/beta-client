@@ -20,10 +20,7 @@
     <q-drawer v-model="leftDrawerOpen" bordered>
       <q-list>
         <q-item-label header> Essential Links </q-item-label>
-
-        <EssentialLink v-for="link in links" :key="link.title" v-bind="link" />
       </q-list>
-      <p>{{ linksTest }}</p>
     </q-drawer>
 
     <q-page-container>
@@ -33,25 +30,10 @@
 </template>
 
 <script>
-import EssentialLink from "src/components/ServerLink.vue";
-
-import { defineComponent, ref } from "vue";
-import { mapGetters } from "vuex";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: "MainLayout",
-
-  components: {
-    EssentialLink,
-  },
-
-  computed: {
-    ...mapGetters("link", ["links"]),
-  },
-
-  created() {
-    this.$store.dispatch("link/getLinks");
-  },
+  name: 'MainLayout',
 
   setup() {
     const leftDrawerOpen = ref(false);
